@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap');
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #FFB6C1;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+    text-align: center;
+    position: relative;
+}
+
+.container {
+    text-align: center;
+    position: relative;
+}
+
+.title {
+    font-family: 'Dancing Script', cursive;
+    font-size: 2.5rem;
+    color: #ff6f61;
+    margin-bottom: 1.5rem;
+    animation: heartbeat 1.5s infinite ease-in-out;
+}
+
+@keyframes heartbeat {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.2);
+    }
+}
+
+.btn {
+    background: linear-gradient(to bottom, #ff6f61, #e55b50);
+    color: white;
+    padding: 0.8rem 1.5rem;
+    border: none;
+    border-radius: 10px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin: 0.5rem;
+    box-shadow: 0px 4px 0px #c14b45;
+}
+
+.btn:active {
+    transform: translateY(4px);
+    box-shadow: 0px 1px 0px #c14b45;
+}
+
+.hidden-message, .hidden-buttons {
+    display: none;
+}
+
+.image {
+    width: 200px;
+    height: auto;
+    border-radius: 20px;
+    margin-bottom: 1rem;
+}
+
+.message {
+    font-family: 'Dancing Script', cursive;
+    font-size: 1.2rem;
+    color: #ff6f61;
+    margin-top: 1.5rem;
+}
